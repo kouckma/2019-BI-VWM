@@ -1,0 +1,12 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+}
+
+
+.title{
+    padding: 100px 40px 40px 40px;
+    font-weight:200;
+    font-size:3em;
+}

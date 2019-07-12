@@ -1,0 +1,31 @@
+The Wiener-Ikehara theorem can be used to prove the prime number theorem (see Chandrasekharan's book Introduction to Analytic Number Theory).  It was proved by Norbert Wiener and his student Shikao Ikehara in 1932.  It is an example of a Tauberian theorem.
+
+ Statement  .
+Let A(x) be a non-negative, monotonic decreasing function of x, defined for . Suppose that
+
+;
+
+converges for Re(s)>1 to the function f(s) and that f(s) is analytic for , except for a simple pole at s=1 with residue 1: that is,  is continuous in . Then the limit as x goes to infinity of e(-x)A(x) is equal to 1.
+
+ Application .
+
+An important number-theoretic application of the theorem is to Dirichlet series of the form 
+
+ ;
+
+where a(n) is non-negative.  If the series converges to an analytic function in 
+
+ ;
+
+with a simple pole of residue c at s=b, then 
+
+.
+
+Applying this to the logarithmic derivative of the Riemann zeta function, where the coefficients in the Dirichlet series are values of the von Mangoldt function, it is possible to deduce the prime number theorem from the fact that the zeta function has no zeroes on the line 
+
+;
+
+
+
+
+ENDOFARTICLE.

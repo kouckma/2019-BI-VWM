@@ -1,0 +1,16 @@
+
+<h2>{{ name }}</h2>
+
+
+{% for item in arr %}
+    <p> {{ item }}</p>
+{% endfor %}
+
+{% for ref in res %}
+    <a href='files/{{ref}}'> {{ ref }} </a>
+{% endfor %}
+
+
+<a href='/' id=back>
+    <button class='btn btn-default'>go back</button>
+</a>

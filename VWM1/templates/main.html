@@ -1,0 +1,77 @@
+{% extends 'layout.html' %}
+
+
+{% block title %}
+Vektorové vyhledávání
+{% endblock %}
+
+
+{% block content %}
+<div class='container'>
+    <div class="row">
+
+        <div class="col-sm-12">
+            <h1 class="title">Vector Search</h1>
+        </div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 ">
+            <form action="/" method="post">
+
+                <div class="form-group">
+                    <input type="text" id="fname" name="fname" value="{% if test != None %}{{test}}{%endif%}" placeholder="Zadejte query" class="form-control">
+                </div>
+                <br>
+                <button class='btn btn-default btn-danger'>Vyhledat</button>
+            </form>
+
+                                    
+            {% if res %}
+            <div class="table-responsive">
+                <table class="table">
+                
+                    <thead>
+                        <tr>
+                            <th>Název</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            
+                    {% for item ,value in res%}
+                        <tr>
+                            <td>{{item}}</td>
+                            <td>{{value}}</td>
+                            <td class="text-right"><a class="btn btn-danger" href='files/{{item}}'> Detail </a></td>
+                        </tr>
+                    {% endfor %}
+                
+                    </tbody>
+
+
+                </table>
+            </div> 
+            {% endif %}
+
+
+
+
+
+
+
+
+            
+        </div>
+        <div class="col-sm-3"></div>
+
+    
+
+    </div>
+
+    
+
+
+
+</div>
+
+
+{% endblock %}

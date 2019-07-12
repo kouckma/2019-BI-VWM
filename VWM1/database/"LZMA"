@@ -1,0 +1,64 @@
+LZMA, short for Lempel-Ziv-Markov chain-Algorithm, is a data compression algorithm in development since 1998 and used in the 7z format of the 7-Zip archiver. It uses a dictionary compression scheme somewhat similar to LZ77 and features a high compression ratio (generally higher than bzip2) and a variable compression-dictionary size (up to 1 GB).
+
+ Overview .
+The LZMA uses an improved LZ77 compression algorithm, backed by a range coder.
+
+Streams for data, repeated-sequence size and repeated-sequence location seem to be compressed separately.
+
+ 7-Zip reference implementation .
+The reference implementation of LZMA is included as part of the 7z and 7-Zip suite of tools. Source code is distributed under the terms of the GNU LGPL license.
+
+The reference open source LZMA compression library is written in C++ and has the following properties:
+
+ Compression speed: approximately 1 MB per second on a 2 GHz CPU;
+ Decompression speed: between 10 and 20 MB per second on a 2 GHz CPU;
+ Support for multi-threading and for the Pentium 4 microprocessor's hyper-threading feature.
+
+The 7-Zip implementation uses several variants of hash chains, binary trees and Patricia tries as the basis for its dictionary search algorithm.
+
+Decompression-only code for LZMA generally compiles to around 5kB and the amount of RAM required during decompression is principally determined by the size of the sliding window used during compression. Small code size and relatively low memory overhead, particularly with smaller dictionary lengths, make the LZMA decompression algorithm well-suited to embedded applications.
+
+ Portability of the reference implementation .
+Wide use of Microsoft Windows-specific features are deeply buried in the source code, meaning that despite the reference implementation being Free software it has taken a while for a Unix-compatible version to appear.
+
+Currently, there are two working ports to Unix-like platforms:
+
+ p7zip, a port of 7-Zip's 7z and 7za command-line tools. p7zip produces standard 7z archive stream where LZMA can be combined with additional filters, such as relative address pre-processing for jump and call instructions in an executable file.
+ LZMA Utils, a port consisting of only the LZMA code and designed to work with raw LZMA streams in a similar way to the compression utilities gzip and bzip2. For archiving of multiple files, the lzma tool would be used on top of an archive format such as .tar. The produced output is raw LZMA with no header information.
+
+Note that the LZMA stream produced by 7-Zip and LZMA Utils differ, making them incompatible. Currently neither tool can use the files created by the opposite utility, at least for now. 7-Zip includes an additional 64-bit header entry containing the uncompressed filesize, which LZMA Utils does not add.
+
+
+ Users .
+Software that uses or supports LZMA:
+
+ Nullsoft Scriptable Install System;
+ Inno Setup;
+ cramfs and SquashFS, with applied patches;
+ lrzip ("long range zip", or "LZMA rzip");
+ PyLZMA, a Python interface to Igor Pavlov's LZMA SDK;
+ FreeArc, an archiver and Haskell interface to the LZMA SDK;
+ LZMA SDK for Pascal;
+ CompreXX, with Explorer integration like Windows XP's ZIP folders;
+ InstallAware, for Windows Installer;
+ Peazip, GUI frontend to command-line 7z and POSIX 7z binaries ;
+ UPX, from version 2.92 (beta) and above, features optional LZMA compression;
+
+ External links .
+ 7-Zip homepage;
+ p7zip homepage;
+ PyLZMA homepage;
+
+
+
+
+
+
+
+
+
+
+
+
+
+ENDOFARTICLE.

@@ -1,0 +1,33 @@
+A Liquid State Machine (LSM) is a computational construct, like a neural network. An LSM consists of a large collection of units (called nodes, or neurons). Each node receives time varying input from external sources (the inputs) as well as other nodes. Nodes are randomly connected to each other. The recurrent nature of the connections turns the time varying input into a spatio-temporal pattern of activations in the network nodes. The spatio-temporal patterns of activation are read out by linear discriminant units.
+
+The soup of recurrently connected nodes will end up computing a large variety of nonlinear functions on the input. Given a large enough variety of such nonlinear functions, it is theoretically possible to obtain linear combinations (using the read out units) to perform whatever mathematical operation is needed to perform a certain task, such as speech recognition or computer vision.
+
+The word liquid in the name comes from the analogy drawn to dropping a stone into a still body of water or other liquid. The falling stone will generate ripples in the liquid. The input (motion of the falling stone) has been converted into a spatio-temporal pattern of liquid displacement (ripples).
+
+LSMs have been put forward as a way to explain the operation of brains. LSMs are argued to be an improvement over the theory of artificial neural networks because:
+
+
+Circuits are not hand coded to perform a specific task.
+Continuous time inputs are handled "naturally".
+Computations on various time scales can be done using the same network.
+The same network can perform multiple computations.
+
+
+Criticisms of LSMs as used in computational neuroscience are that
+
+LSMs don't actually explain how the brain functions. At best they can replicate some parts of brain functionality.
+There is no guaranteed way to dissect a working network and figure out how or what computations are being performed.
+Very little control over the process. 
+Inefficient from an implementation point of view because they require lots of computations, compared to custom designed circuits, or even neural networks.
+
+ References .
+
+Wolfgang  Maass and Thomas  Natschl\E4ger and Henry  Markram "Real-Time Computing Without Stable States: A New Framework for Neural Computation Based on Perturbations" Computation. 2002;14:2531-2560.;
+
+Wolfgang  Maass and Thomas  Natschl\E4ger and Henry  Markram "Computational models for generic cortical microcircuits"  in Computational Neuroscience: A Comprehensive Approach, Ch 18, pg 575-605 (2004);
+
+Chrisantha Fernando and Sampsa Sojakka "Pattern Recognition in a Bucket" in Advances in Artificial Life, pg 588-597 of series Lecture Notes in Computer Science, ISBN 978-3-540-20057-4;
+
+
+
+ENDOFARTICLE.

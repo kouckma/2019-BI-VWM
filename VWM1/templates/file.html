@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+
+
+{% block title %}
+{{name}}
+{% endblock %}
+
+{% block content %}
+<div class='container'>
+    <div class="row">
+
+        <div class="col-sm-12">
+            <h1 class="title">{{name}}</h1>
+        </div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 ">
+            <p style="text-align: justify">
+            {% for item in arr %}
+                 {{ item }}
+            {% endfor %}
+            </p>
+
+            <hr>
+
+            <p class="alert alert-info"> similar files </p>
+
+            <div class="table-responsive">
+                <table class="table">
+
+            {% for ref, value in res %}
+                <tr>
+                            <td>{{ref}}</td>
+                            <td>{{value}}</td>
+                            <td class="text-right"><a class="btn btn-danger" href='{{ref}}'> Detail </a></td>
+                </tr>
+            {% endfor %}
+                </table>
+            </div>
+
+            <hr>
+
+            <a class="btn btn-danger" href="/" >Zpět</a>
+        </div>
+        <div class="col-sm-3"></div>
+
+    
+
+    </div>
+
+    
+
+
+
+</div>
+
+
+{% endblock %}

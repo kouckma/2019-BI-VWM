@@ -1,0 +1,34 @@
+
+
+
+AutoIndex PHP Script is a free, open source software package written in PHP.  It makes an index of a directory on a website and lets users access the files and subdirectories.  It includes a searching feature, file uploading, access logging, and file descriptions.
+
+Members of its user community have translated the software into 35 languages.
+
+AutoIndex also acts as an online file manager though the use of an administration panel.  This allows someone who is logged in with an administrator account to upload, rename, and delete files.
+
+ Version 1 .
+Version 1 is compatible with both PHP 4 and PHP 5.  This is currently considered the "legacy" version, because it is released for compatibility with PHP 4.
+
+However, Version 1 is still maintained to include bug fixes and security updates, although no new features are added.
+
+ Version 2 .
+Version 2 was rewritten in PHP 5 to make use of its object-oriented features.  This version added:
+ .htaccess parsing;
+ FTP access;
+ a template system for customizing the layout;
+ on-the-fly TAR archive creation;
+ the ability to assign a home directory to each user;
+
+Note that Version 2 requires PHP 5 or later to be used.
+
+ References .
+
+
+ External links .
+Official website;
+Project Site (SourceForge.net);
+AutoIndex Review by Research Computing at Dana-Farber Cancer Institute;
+
+
+ENDOFARTICLE.

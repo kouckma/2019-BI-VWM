@@ -1,0 +1,97 @@
+
+Santa Maria a Vico is a comune (municipality) in the Province of Caserta in the Italian region Campania, located about 30 km northeast of Naples and about 13 km southeast of Caserta. As of 31 December 2004, it had a population of 13,827 and an area of 10.8 km2.
+
+Santa Maria a Vico borders the following municipalities: Arienzo, Cervino, Durazzano, Maddaloni, San Felice a Cancello, Sant'Agata de' Goti.
+
+
+ Demographic evolution .
+
+Colors=
+  id:lightgrey value:gray(0.9)
+  id:darkgrey  value:gray(0.8)
+  id:sfondo value:rgb(1,1,1)
+  id:barra value:rgb(0.6,0.7,0.8)
+
+ImageSize  = width:455 height:303
+PlotArea   = left:50 bottom:50 top:30 right:30
+DateFormat = x.y
+Period     = from:0 till:14000
+TimeAxis   = orientation:vertical
+AlignBars  = justify
+ScaleMajor = gridcolor:darkgrey increment:2000 start:0
+ScaleMinor = gridcolor:lightgrey increment:500 start:0
+BackgroundColors = canvas:sfondo
+
+BarData=
+  bar:1861 text:1861
+  bar:1871 text:1871
+  bar:1881 text:1881
+  bar:1901 text:1901
+  bar:1911 text:1911
+  bar:1921 text:1921
+  bar:1931 text:1931
+  bar:1936 text:1936
+  bar:1951 text:1951
+  bar:1961 text:1961
+  bar:1971 text:1971
+  bar:1981 text:1981
+  bar:1991 text:1991
+  bar:2001 text:2001
+
+PlotData=
+  color:barra width:20 align:left
+
+  bar:1861 from: 0 till:5855
+  bar:1871 from: 0 till:5940
+  bar:1881 from: 0 till:5921
+  bar:1901 from: 0 till:6610
+  bar:1911 from: 0 till:6968
+  bar:1921 from: 0 till:7569
+  bar:1931 from: 0 till:8337
+  bar:1936 from: 0 till:8573
+  bar:1951 from: 0 till:9549
+  bar:1961 from: 0 till:9350
+  bar:1971 from: 0 till:8738
+  bar:1981 from: 0 till:10447
+  bar:1991 from: 0 till:12182
+  bar:2001 from: 0 till:13502
+
+PlotData=
+
+  bar:1861 at:5855 fontsize:XS text: 5855 shift:(-8,5)
+  bar:1871 at:5940 fontsize:XS text: 5940 shift:(-8,5)
+  bar:1881 at:5921 fontsize:XS text: 5921 shift:(-8,5)
+  bar:1901 at:6610 fontsize:XS text: 6610 shift:(-8,5)
+  bar:1911 at:6968 fontsize:XS text: 6968 shift:(-8,5)
+  bar:1921 at:7569 fontsize:XS text: 7569 shift:(-8,5)
+  bar:1931 at:8337 fontsize:XS text: 8337 shift:(-8,5)
+  bar:1936 at:8573 fontsize:XS text: 8573 shift:(-8,5)
+  bar:1951 at:9549 fontsize:XS text: 9549 shift:(-8,5)
+  bar:1961 at:9350 fontsize:XS text: 9350 shift:(-8,5)
+  bar:1971 at:8738 fontsize:XS text: 8738 shift:(-8,5)
+  bar:1981 at:10447 fontsize:XS text: 10447 shift:(-8,5)
+  bar:1991 at:12182 fontsize:XS text: 12182 shift:(-8,5)
+  bar:2001 at:13502 fontsize:XS text: 13502 shift:(-8,5)
+
+TextData=
+  fontsize:S pos:(20,20)
+  text:Data from ISTAT
+
+
+
+References.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ENDOFARTICLE.

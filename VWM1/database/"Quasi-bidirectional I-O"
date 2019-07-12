@@ -1,0 +1,9 @@
+
+
+A quasi-bidirectional I/O is a type of input-output port on an integrated circuit such as a PIA.  It can be used as an input or output without the use of a control signal for data direction.  At power-on the I/Os are HIGH.  In this mode, only a current source to VDD is active.  An additional strong pull-up to VDD allows fast rising edges into heavily loaded outputs.
+
+
+
+
+
+ENDOFARTICLE.

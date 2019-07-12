@@ -1,0 +1,20 @@
+MusicIP is a music search engine which uses an algorithm for generating unique acoustic fingerprints. From these fingerprints, songs can be identified by their acoustic signature regardless of differences at the digital data level (file format, data compression rates, etc). While the technology required to create fingerprints is proprietary, identifying tracks against the existing fingerprint database can be done freely through the MusicDNS service.
+
+MusicIP technology also features the ability to analyse musical content for meaningful (to humans) musical attributes, so that the software is able to identify tracks that are acoustically similar. This feature forms the basis of MusicIP's primary software application, MusicIP Mixer.
+
+See also.
+ MusicIP Mixer;
+ MusicDNS;
+ List of online music databases;
+
+External links.
+MusicIP.com;
+MusicDNS.org;
+MusicIP Mixer Add-ons and Community site (unofficial);
+;
+
+
+
+
+
+ENDOFARTICLE.

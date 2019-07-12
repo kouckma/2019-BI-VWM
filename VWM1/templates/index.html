@@ -1,0 +1,23 @@
+<div class='container'>
+    <h1>Vector Search</h1>
+    <form action="/" method="post">
+
+        <label for="fname">Query</label>
+        <input type="text" id="fname" name="fname">
+        <a href=# id=test>
+            <button class='btn btn-default'>Search</button>
+        </a>
+    </form>
+
+</div>
+{% if test != None %}
+    <h2> your query:</h2>
+    <p> </p>
+    <p> {{ test }} </p>
+    <p> </p>
+{% endif %}
+
+    <h2> your results:</h2>
+{% for item in res %}
+    <p><a href='files/{{item}}'> {{ item }} </a></p>
+{% endfor %}
